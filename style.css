@@ -56,3 +56,29 @@
     border-radius: 40px;
     cursor: pointer;
 }
+
+.list-container li{
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    padding: 12px 8px 12px 50px;
+    font-size: 17px;
+    position: relative;
+}
+.list-container li::before{
+    content:'';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-color: orangered;
+    top: 8px;
+    left: 13px;
+}
+.checked{
+    color: #303030;
+    text-decoration: line-through;
+}
+.list-container li.checked::before{
+    background-color: green;
+}
