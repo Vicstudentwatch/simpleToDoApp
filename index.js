@@ -12,7 +12,13 @@ addText.addEventListener("click",()=>{
         let input = document.createElement('li');
         input.innerHTML = inputBox.value;
         listContainer.appendChild(input);
-        inputBox.value = "";
+        
+        //create span X to delete
+        let span = document.createElement('span');
+        span.innerHTML = '\u00d7';
+        input.appendChild(span)
+
     }
+    inputBox.value = "";
 })
 
