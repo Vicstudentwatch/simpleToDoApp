@@ -46,3 +46,13 @@
     background: transparent;
     padding: 10px;
 }
+
+.row button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: green;
+    color: #fff;
+    border-radius: 40px;
+    cursor: pointer;
+}
